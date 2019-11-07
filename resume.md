@@ -3,14 +3,18 @@ Driving Business Outcomes through Enterprise Architecture
 
 10 Echodale Avenue  
 Baldwinsville, NY 13027  
-voice: +1 917.300.8511  
-email: e.a.stephens@me.com  
-Twitter: @EricStephens
+voice: +1 917.300.8511 | email: e.a.stephens@me.com | Twitter: @EricStephens | Wire: @ericstephens | Signal: +1 917.300.8511  
 
 # Profile
 Passionate about the art and science of Enterprise Architecture (EA) to advance business outcomes. Fluent in numerous technological domains in a variety of industries including retail, life sciences, mobile telecom, media & entertainment, financial services, healthcare, and public sector.
 
 # Experience
+
+## Member, Board of Directors
+**Total Concussion Management 07/2019 - present**
+
+Advisor to CEO regarding healthcare technology and sales strategy.
+
 
 ## Business Value Consultant / Enterprise Architect
 **Commvault 10/2016 - present**
