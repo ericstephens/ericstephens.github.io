@@ -1,30 +1,404 @@
-<h1 id="eric-a.-stephens">Eric A. Stephens</h1>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Eric A. Stephens</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="eric-a-stephens">Eric A. Stephens</h1>
 <p>Driving Business Outcomes through Enterprise Architecture</p>
-<p>10 Echodale Avenue<br />
-Baldwinsville, NY 13027<br />
-voice: +1 917.300.8511 | email: e.a.stephens@me.com | Twitter: <span class="citation" data-cites="EricStephens">@EricStephens</span> | Wire: <span class="citation" data-cites="ericstephens">@ericstephens</span> | Signal: +1 917.300.8511</p>
+<p>10 Echodale Avenue<br>
+Baldwinsville, NY 13027<br>
+voice: +1 917.300.8511 | email: e.a.stephens@me.com | Twitter: http://twitter.com/EricStephens | Signal: +1 917.300.8511</p>
 <h1 id="profile">Profile</h1>
 <p>Passionate about the art and science of Enterprise Architecture (EA) to advance business outcomes. Fluent in numerous technological domains in a variety of industries including retail, life sciences, mobile telecom, media &amp; entertainment, financial services, healthcare, and public sector.</p>
 <h1 id="experience">Experience</h1>
-<h2 id="member-board-of-directors">Member, Board of Directors</h2>
+<h2 id="chair-board-of-directors">Chair, Board of Directors</h2>
 <p><strong>Total Concussion Management 07/2019 - present</strong></p>
 <p>Advisor to CEO regarding healthcare technology and sales strategy.</p>
-<h2 id="business-value-consultant-enterprise-architect">Business Value Consultant / Enterprise Architect</h2>
+<h2 id="principal-business-value-consulting---americas">Principal, Business Value Consulting - Americas</h2>
 <p><strong>Commvault 10/2016 - present</strong></p>
-<p>Achieved or exceeded revenue influence targets in dual role elevating our collaboration in accounts resulting in expanded deal size. Engaged broader into channel ecosystem to establish new partners. Led role in developing next iteration of GTM process for EA-centric, capability-driven advisory engagements. Leveraged strategic consulting and EA practices in a highly tailored fashion. Formulated market sizing analysis for strategic partners to drive pipeline. While maintaining business activities demonstrated personal leadership capabilities - Led Communities of Interest efforts around cloud computing to identify pertinent trends to Data Management - Achieved two cloud certifications within a 3 month period - Recipient of Wingman Award Q4FY2018 and Above &amp; Beyond Q1FY2018 for excellence in deal execution and thought leadership</p>
+<p>Achieved or exceeded revenue targets in dual role elevating our collaboration in accounts resulting in expanded deal size.  Engaged broader into channel ecosystem to establish new partners. Develop and deliver enablement material to assist in pre-sales requirements engineering / discovery practices.
+Led role in developing next iteration of GTM process for EA-centric, capability-driven advisory engagements. Leveraged strategic consulting and EA practices in a highly tailored fashion. Formulated market sizing analysis for strategic partners to drive pipeline.</p>
+<p>While maintaining business activities demonstrated personal leadership capabilities:</p>
+<ul>
+<li>Led Communities of Interest efforts around cloud computing to identify pertinent trends to Data Management</li>
+<li>Achieved two cloud certifications within a 3 month period</li>
+<li>Recipient of Wingman Award Q4FY2018 and Above &amp; Beyond Q1FY2018 for excellence in deal execution and thought leadership</li>
+<li>Develop lab for testing software-defined storage platform. See https://github.com/Commvault/hedvig-lab</li>
+</ul>
 <h2 id="engagement-manager">Engagement Manager</h2>
 <p><strong>Strategy&amp;, part of the PwC network 04/2015 - 10/2016</strong></p>
 <p>Participated and led engagements for healthcare clients focusing on business capability evolution and organization / culture change:</p>
 <ul>
 <li>Developed offering strategy for growing IT services firm to expand services and markets</li>
 <li>Executed rapid process improvement assessment to address encounter submission challenges for government payor BPO. Synthesized assessment framework along with short and long-term recommendations.</li>
-<li>Developed strategy to advance software testing practices addressing process and operating model optimization leading to notable cost savings.<br />
-</li>
+<li>Developed strategy to advance software testing practices addressing process and operating model optimization leading to notable cost savings.</li>
 <li>Led team to develop eWorking capability strategy addressing mounting real estate costs, decreasing employee satisfaction, and difficult talent attraction.</li>
 <li>Refined capability model and assessed maturity as part of investment prioritization effort for mid-sized insurer. Contributed to engagement team mobilization, deliverables, and IP.</li>
 </ul>
 <p>While executing projects, developed thought leadership on next generation Enterprise / Capabilities Architecture, Electronic Collaboration Suites, and IoT for Health Care Payers. Provided leadership support for internal EA community of practice, supported business development efforts, and mentored new staff.</p>
-<h2 id="oracle-enterprise-architect-enterprise-architecture-director">Oracle Enterprise Architect / Enterprise Architecture Director</h2>
+<h2 id="oracle-enterprise-architect--enterprise-architecture-director">Oracle Enterprise Architect / Enterprise Architecture Director</h2>
 <p><strong>Oracle Corporation 06/2010 - 04/2015</strong></p>
 <p>Demonstrated executive-level engagement in formulating actionable EA roadmaps for clients in several vertical domains. Specialized in business architecture, application rationalization/transformation, public sector health care programs, and EA governance. Key accomplishments include:</p>
 <ul>
@@ -35,28 +409,25 @@ voice: +1 917.300.8511 | email: e.a.stephens@me.com | Twitter: <span class="cita
 <li>Recognized as OEA of the Year FY2013 and 3QFY2011</li>
 </ul>
 <p>Simultaneously with client engagements, contributed to internal collateral on Information Architecture and EA Governance. Engaged in business development activities and interacted with global EA community and industry forums including speaking engagements. Ongoing interviews and contributions to Oracle Magazine.</p>
-<h2 id="senior-director-enterprise-architecture-enterprise-architect">Senior Director, Enterprise Architecture / Enterprise Architect</h2>
+<h2 id="senior-director-enterprise-architecture--enterprise-architect">Senior Director, Enterprise Architecture / Enterprise Architect</h2>
 <p><strong>Excellus BlueCross BlueShield 05/2001 - 06/2010</strong></p>
 <p>Transformed team of existing solution architects to an enterprise focus to deliver key strategic artifacts. Applied business architecture/modeling to refining software design processes. Performed annual refreshes of strategies leading to actionable work plans aligned with corporate strategy. Frequent speaker and writer for both internal and external venues. Lead cross-divisional innovation efforts around product design and technology investments to improve customer intimacy.</p>
 <p>Provided intellectual leadership around the discipline of Enterprise and Software Architecture using prominent techniques and collateral from the industry including the Zachman, TOGAF frameworks. Led roll-out of Enterprise Architecture modeling tool (MEGA) to improve documentation practices.</p>
 <p>Executed role of lead software architect and project manager for J2EE software projects including PHR and eRx applications with heavy integration requirements. Unified Java development efforts across enterprise by establishing and disseminating Java development standards via quarterly conferences.</p>
 <h2 id="adjunct-instructor">Adjunct Instructor</h2>
 <p><strong>Syracuse University 09/1996 - 12/2010</strong></p>
-<p>Led team in developing an Internet/Intranet Developer certificate program to lead existing IT professionals into distributed network computing. Instructed a number of existing IT professions in database technologies such as Oracle 8i, Microsoft SQL Server, HTML/CGI/XML, Java programming, JSP/Servlet Programming, Object-Oriented Analysis and Design, and distributed computing (CORBA).</p>
 <h2 id="managing-software-architect">Managing Software Architect</h2>
 <p><strong>AppliedTheory 09/1996 - 05/2001</strong></p>
-<p>Leveraged technical, sales, and managerial capabilities to build team of J2EE consultants to deliver enterprise-class web solutions for clients in the bio-tech, government, and financial sectors.</p>
-<h2 id="managing-software-architect-1">Managing Software Architect</h2>
+<h2 id="managing-software-architect">Managing Software Architect</h2>
 <p><strong>Questra Consulting 08/1995 - 09/1996</strong></p>
-<p>Managed project and designed solution for distributed child healthcare management systems. Participated in business development and recruiting efforts to further expand business.</p>
 <h2 id="ascending-software-development-roles">Ascending Software Development Roles</h2>
 <p><strong>Mutual of New York / CSC; 12/1987 - 08/1995</strong></p>
-<p>Contributed multiple Client/Server and mainframe-based development and maintenance projects concentrating on proper architectural design and development of complex components. Developed, supported, and enforced the use of common software components for Client/Server development. Pioneered use of client/server integration technology with mainframe.</p>
 <h1 id="education">Education</h1>
 <h2 id="syracuse-university-syracuse-ny">Syracuse University, Syracuse, NY</h2>
 <p>Bachelor of Science. <em>summa cum laude</em> - Business Administration / MIS 1987</p>
 <h1 id="certifications-and-accreditations">Certifications and Accreditations</h1>
 <ul>
+<li><a href="https://www.youracclaim.com/badges/7bf14745-aedf-43ee-9586-134c96a70148?source=linked_in_profile">Azure AI Fundamentals</a>. March 2021.</li>
 <li><a href="https://www.credential.net/5wkbz8wh?key=a60fe89b8dbab5c1ae14c7b98df5dc8a5d32f18521582f92ea8d13700d95de93">Google Cloud Certified - Professional Cloud Architect</a>. April 2019.</li>
 <li><a href="https://www.certmetrics.com/amazon/public/badge.aspx?i=2&amp;t=c&amp;d=2018-10-03&amp;ci=AWS00381188">AWS Certified Developer Associate</a>. October 2018.</li>
 <li><a href="https://www.certmetrics.com/amazon/public/badge.aspx?i=2&amp;t=c&amp;d=2018-10-03&amp;ci=AWS00381188">AWS Certified Solution Architect</a>. September 2018.</li>
@@ -68,9 +439,13 @@ voice: +1 917.300.8511 | email: e.a.stephens@me.com | Twitter: <span class="cita
 </ul>
 <h1 id="awards">Awards</h1>
 <ul>
+<li>Commvault - Gold star award. Q2FY2021.</li>
 <li>Commvault - Wingman Award. Q4FY2018.</li>
 <li>Commvault - Above &amp; Beyond. Q1FY2018.</li>
 <li>OEA of the Quarter. Oracle Corporation. 3QFY2011</li>
 <li>OEA of the Year FY2013. Oracle Corporation.</li>
 <li>IT Professional of the Year. Excellus BlueCross BlueShield. 2005.</li>
 </ul>
+
+</body>
+</html>

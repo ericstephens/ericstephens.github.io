@@ -3,28 +3,29 @@ Driving Business Outcomes through Enterprise Architecture
 
 10 Echodale Avenue  
 Baldwinsville, NY 13027  
-voice: +1 917.300.8511 | email: e.a.stephens@me.com | Twitter: @EricStephens | Wire: @ericstephens | Signal: +1 917.300.8511  
+voice: +1 917.300.8511 | email: e.a.stephens@me.com | Twitter: http://twitter.com/EricStephens | Signal: +1 917.300.8511  
 
 # Profile
 Passionate about the art and science of Enterprise Architecture (EA) to advance business outcomes. Fluent in numerous technological domains in a variety of industries including retail, life sciences, mobile telecom, media & entertainment, financial services, healthcare, and public sector.
 
 # Experience
 
-## Member, Board of Directors
+## Chair, Board of Directors
 **Total Concussion Management 07/2019 - present**
 
 Advisor to CEO regarding healthcare technology and sales strategy.
 
-
-## Business Value Consultant / Enterprise Architect
+## Principal, Business Value Consulting - Americas
 **Commvault 10/2016 - present**
 
-Achieved or exceeded revenue influence targets in dual role elevating our collaboration in accounts resulting in expanded deal size.  Engaged broader into channel ecosystem to establish new partners.
+Achieved or exceeded revenue targets in dual role elevating our collaboration in accounts resulting in expanded deal size.  Engaged broader into channel ecosystem to establish new partners. Develop and deliver enablement material to assist in pre-sales requirements engineering / discovery practices.
 Led role in developing next iteration of GTM process for EA-centric, capability-driven advisory engagements. Leveraged strategic consulting and EA practices in a highly tailored fashion. Formulated market sizing analysis for strategic partners to drive pipeline.
-While maintaining business activities demonstrated personal leadership capabilities
+
+While maintaining business activities demonstrated personal leadership capabilities:
 - Led Communities of Interest efforts around cloud computing to identify pertinent trends to Data Management
 - Achieved two cloud certifications within a 3 month period
 - Recipient of Wingman Award Q4FY2018 and Above & Beyond Q1FY2018 for excellence in deal execution and thought leadership
+- Develop lab for testing software-defined storage platform. See https://github.com/Commvault/hedvig-lab
 
 ## Engagement Manager
 **Strategy&, part of the PwC network 04/2015 - 10/2016**
@@ -64,22 +65,15 @@ Executed role of lead software architect and project manager for J2EE software p
 ## Adjunct Instructor
 **Syracuse University 09/1996 - 12/2010**
 
-Led team in developing an Internet/Intranet Developer certificate program to lead existing IT professionals into distributed network computing. Instructed a number of existing IT professions in database technologies such as Oracle 8i, Microsoft SQL Server, HTML/CGI/XML, Java programming, JSP/Servlet Programming, Object-Oriented Analysis and Design, and distributed computing (CORBA).
-
 ## Managing Software Architect
 **AppliedTheory 09/1996 - 05/2001**
-
-Leveraged technical, sales, and managerial capabilities to build team of J2EE consultants to deliver enterprise-class web solutions for clients in the bio-tech, government, and financial sectors.
 
 ## Managing Software Architect
 **Questra Consulting 08/1995 - 09/1996**
 
-Managed project and designed solution for distributed child healthcare management systems. Participated in business development and recruiting efforts to further expand business.
-
 ## Ascending Software Development Roles
 **Mutual of New York / CSC; 12/1987 - 08/1995**
 
-Contributed multiple Client/Server and mainframe-based development and maintenance projects concentrating on proper architectural design and development of complex components. Developed, supported, and enforced the use of common software components for Client/Server development. Pioneered use of client/server integration technology with mainframe.
 
 # Education
 
@@ -88,6 +82,7 @@ Bachelor of Science. _summa cum laude_ - Business Administration / MIS 1987
 
 # Certifications and Accreditations
 
+- [Azure AI Fundamentals](https://www.youracclaim.com/badges/7bf14745-aedf-43ee-9586-134c96a70148?source=linked_in_profile). March 2021.
 - [Google Cloud Certified - Professional Cloud Architect](https://www.credential.net/5wkbz8wh?key=a60fe89b8dbab5c1ae14c7b98df5dc8a5d32f18521582f92ea8d13700d95de93). April 2019.
 - [AWS Certified Developer Associate](https://www.certmetrics.com/amazon/public/badge.aspx?i=2&t=c&d=2018-10-03&ci=AWS00381188). October 2018.
 - [AWS Certified Solution Architect](https://www.certmetrics.com/amazon/public/badge.aspx?i=2&t=c&d=2018-10-03&ci=AWS00381188). September 2018.
@@ -99,6 +94,7 @@ Bachelor of Science. _summa cum laude_ - Business Administration / MIS 1987
 
 # Awards
 
+- Commvault - Gold star award. Q2FY2021.
 - Commvault - Wingman Award. Q4FY2018.
 - Commvault - Above & Beyond. Q1FY2018.
 - OEA of the Quarter. Oracle Corporation. 3QFY2011
