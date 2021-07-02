@@ -3,7 +3,7 @@ Driving Business Outcomes through Enterprise Architecture
 
 10 Echodale Avenue  
 Baldwinsville, NY 13027  
-voice: +1 917.300.8511 | email: e.a.stephens@me.com | Twitter: http://twitter.com/EricStephens | Signal: +1 917.300.8511  
+Mobile: +1 917.300.8511 | Email: e.a.stephens@me.com | Signal: +1 917.300.8511  
 
 # Profile
 Passionate about the art and science of Enterprise Architecture (EA) to advance business outcomes. Fluent in numerous technological domains in a variety of industries including retail, life sciences, mobile telecom, media & entertainment, financial services, healthcare, and public sector.
@@ -11,7 +11,7 @@ Passionate about the art and science of Enterprise Architecture (EA) to advance 
 # Experience
 
 ## Chair, Board of Directors
-**Total Concussion Management 07/2019 - present**
+**Total Concussion Management 07/2019 - 06/2021**
 
 Advisor to CEO regarding healthcare technology and sales strategy.
 
@@ -62,7 +62,7 @@ Provided intellectual leadership around the discipline of Enterprise and Softwar
 
 Executed role of lead software architect and project manager for J2EE software projects including PHR and eRx applications with heavy integration requirements. Unified Java development efforts across enterprise by establishing and disseminating Java development standards via quarterly conferences.
 
-## Adjunct Instructor
+## Adjunct Instructor, Internet & J2EE
 **Syracuse University 09/1996 - 12/2010**
 
 ## Managing Software Architect
@@ -73,7 +73,6 @@ Executed role of lead software architect and project manager for J2EE software p
 
 ## Ascending Software Development Roles
 **Mutual of New York / CSC; 12/1987 - 08/1995**
-
 
 # Education
 
