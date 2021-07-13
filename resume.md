@@ -6,7 +6,7 @@ Baldwinsville, NY 13027
 Mobile: +1 917.300.8511 | Email: e.a.stephens@me.com | Signal: +1 917.300.8511  
 
 # Profile
-Passionate about the art and science of Enterprise Architecture (EA) to advance business outcomes. Fluent in numerous technological domains in a variety of industries including retail, life sciences, mobile telecom, media & entertainment, financial services, healthcare, and public sector.
+I help enterprises evolve their business and technical capabilities and provide justification for doing so. Fluent in numerous technological domains in a variety of industries including retail, life sciences, mobile telecom, media & entertainment, financial services, healthcare, and public sector.
 
 # Experience
 
