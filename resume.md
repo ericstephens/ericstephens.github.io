@@ -11,7 +11,7 @@ I help enterprises evolve their business and technical capabilities and provide 
 # Experience
 
 ## Chair, Board of Directors
-**Total Concussion Management 07/2019 - 06/2021**
+**Total Concussion Management 07/2019 - 07/2021**
 
 Advisor to CEO regarding healthcare technology and sales strategy.
 

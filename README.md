@@ -1,2 +1,1 @@
-# ericstephens.github.io
-Various documents
+An assortment of content
