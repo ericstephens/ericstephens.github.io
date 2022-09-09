@@ -10,13 +10,16 @@ I help enterprises evolve their business and technical capabilities and provide 
 
 # Experience
 
+## VP Enterprise Architecture & Strategy, Fidelity Investments - 09/2021 - present
+Responsible for strategy development for middle- and back-office applications within Finance, HR, Risk domains.
+
 ## Chair, Board of Directors
 **Total Concussion Management 07/2019 - 07/2021**
 
 Advisor to CEO regarding healthcare technology and sales strategy.
 
 ## Principal, Business Value Consulting - Americas
-**Commvault 10/2016 - present**
+**Commvault 10/2016 - 09/2022**
 
 Achieved or exceeded revenue targets in dual role elevating our collaboration in accounts resulting in expanded deal size.  Engaged broader into channel ecosystem to establish new partners. Develop and deliver enablement material to assist in pre-sales requirements engineering / discovery practices.
 Led role in developing next iteration of GTM process for EA-centric, capability-driven advisory engagements. Leveraged strategic consulting and EA practices in a highly tailored fashion. Formulated market sizing analysis for strategic partners to drive pipeline.
