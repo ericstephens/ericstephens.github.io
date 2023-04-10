@@ -10,8 +10,8 @@ I help enterprises evolve their business and technical capabilities and provide 
 
 # Experience
 
-## VP Enterprise Architecture & Strategy, Fidelity Investments - 09/2021 - present
-Responsible for strategy development for middle- and back-office applications within Finance, HR, Risk domains.
+## VP Business Architecture & Strategy, Fidelity Investments - 09/2021 - present
+Responsible for evolution of for middle- and back-office capabilities within Finance, HR, Risk, and Corporate services domains. Establishing internal business architecture consulting group to directly engage with IT and business partners to develop leading practices.  Contributor to firm-wide capability workgroups advocating for optimized alignment of said capabilities.
 
 ## Chair, Board of Directors
 **Total Concussion Management 07/2019 - 07/2021**
