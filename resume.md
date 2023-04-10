@@ -3,7 +3,7 @@ Driving Business Outcomes through Enterprise Architecture
 
 10 Echodale Avenue  
 Baldwinsville, NY 13027  
-Mobile: +1 917.300.8511 | Email: e.a.stephens@me.com | Signal: +1 917.300.8511  
+Mobile: +1 315.406.4100 | Email: e.a.stephens@me.com | Signal: +1 917.300.8511  
 
 # Profile
 I help enterprises evolve their business and technical capabilities and provide justification for doing so. Fluent in numerous technological domains in a variety of industries including retail, life sciences, mobile telecom, media & entertainment, financial services, healthcare, and public sector.
