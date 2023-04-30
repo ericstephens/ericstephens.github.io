@@ -19,7 +19,7 @@ Responsible for evolution of for middle- and back-office capabilities within Fin
 Advisor to CEO regarding healthcare technology and sales strategy.
 
 ## Principal, Business Value Consulting - Americas
-**Commvault 10/2016 - 09/2022**
+**Commvault 10/2016 - 09/2021**
 
 Achieved or exceeded revenue targets in dual role elevating our collaboration in accounts resulting in expanded deal size.  Engaged broader into channel ecosystem to establish new partners. Develop and deliver enablement material to assist in pre-sales requirements engineering / discovery practices.
 Led role in developing next iteration of GTM process for EA-centric, capability-driven advisory engagements. Leveraged strategic consulting and EA practices in a highly tailored fashion. Formulated market sizing analysis for strategic partners to drive pipeline.
