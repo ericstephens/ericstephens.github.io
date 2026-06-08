@@ -7,7 +7,7 @@ Nothing in this document is legal advice and the information provided therein is
 Simple, online process now exists. At the time of this writing, I successfully submitted the application and aside from the in-person course, I was able to do everything from home including the photo. It appears I have to travel back to Chelsea, MA for fingerprints and possible interview. More to come when I am contacted.
 
 ## MA non-resident safety class
-The course was conducted at the Lenox Sportsmans Club which is ~3 hours from Central NY. The class duration was 4 hours and consisted of lecture and a 25 question test for $100. Many people finished the test during the class as it was provided when we arrived. Anyone who has handled a firearm would've passed the test with some exceptions; there are MA-specific laws on use-of-force and safe storage which may vary from one's home state. In the case of NY residents who have done the 18-hour course, it was almost a no-brainer.
+The course (LTC-035) was conducted at the Lenox Sportsmans Club which is ~3 hours from Central NY. The class duration was 4 hours and consisted of lecture and a 25 question test for $100. Many people finished the test during the class as it was provided when we arrived. Anyone who has handled a firearm would've passed the test with some exceptions; there are MA-specific laws on use-of-force and safe storage which may vary from one's home state. In the case of NY residents who have done the 18-hour course, it was almost a no-brainer.
 
 ### Key takeaways
 My notetaking was biased towards the differences between NY and MA. And also those things that would get me hung up if omitted or performed incorrectly
@@ -21,3 +21,8 @@ My notetaking was biased towards the differences between NY and MA. And also tho
 - Schools: not in the building but OK in the parking lot (properly secured)
 - A school event off school grounds makes that property a school
 - License is good for one year which just means you pay every year
+
+## Useful links
+- [MA Unified Gun Portal](https://gunportal.mass.gov/mircsUnifiedPortal/)
+- [Thomas Nadoly - Instructor)](http://www.goal.org/find-an-instructor)
+- [Lenox Sportsmans Club (Tom is the president)](https://www.lenoxsportsmensclub.com)
