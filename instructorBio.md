@@ -11,6 +11,20 @@ I learned as an IT instructor the best way to continually learn a subject is to 
 - Prioritize and Execute (Jocko Wilink) 
 - Keep it Simple (Jenkins, Spaulding)
 
+# Key Influences
+- Dave Jenkins (Rochester Personal Defense)
+- Matt Underwood (Rochester Personal Defense)
+- Brian Hill (The Complete Combatant)
+- Dave Spaulding (Handgun Combatives)
+- Dean Hendricks (USCCA)
+- Ed Murdoch (Sig Sauer Academy)
+- Klint Macro (USCCA)
+- Rich Brown (USCCA)
+- Rich Nance (Nance Training & Consulting)
+- Russ Lyons (Modern Samurai Project)
+- Tim Herron (Tim Herron Shooting)
+- Tom Givens (Rangemaster)
+
 # Teaching Experience
 - NRA Basics of Pistol Shooting
 - NY State Concealed Carry 18HR
@@ -23,13 +37,13 @@ I learned as an IT instructor the best way to continually learn a subject is to 
 # Training Experience
 - 2026 - Sig Sauer Academy - Steel Frenzy
 - 2026 - Sig Sauer Academy - Reflexive Shooting II
-- 2026 - Complete Combatant - Inner Game of Shooting
+- 2026 - The Complete Combatant - Inner Game of Shooting
 - 2026 - USCCA - Range Safety Officer Course
 - 2026 - USCCA Firearms Instructor Development Course FIDC-001 
 - 2026 - Rochester Personal Defense - Run Your Gun
 - 2026 - Rochester Personal Defense - Handgun Combatives
 - 2026 - Commonwealth of Massachusetts - Basic Firearms Safety
-- 2026 - Rich Nance Close Quarters Pistol 
+- 2026 - Rich Nance - Close Quarters Pistol 
 - 2026 - American Red Cross - Basic Life Support and First Aid for Severe Bleeding
 - 2025 - Tim Herron - Instructor Diagnostics and Development Course
 - 2025 - Sig Sauer Academy - Pistol Mounted Optics Instructor
