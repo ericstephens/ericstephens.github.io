@@ -24,6 +24,7 @@ I learned as an IT instructor the best way to continually learn a subject is to 
 - 2026 - Sig Sauer Academy - Steel Frenzy
 - 2026 - Sig Sauer Academy - Reflexive Shooting II
 - 2026 - Complete Combatant - Inner Game of Shooting
+- 2026 - USCCA - Range Safety Officer Course
 - 2026 - USCCA Firearms Instructor Development Course FIDC-001 
 - 2026 - Rochester Personal Defense - Run Your Gun
 - 2026 - Rochester Personal Defense - Handgun Combatives
