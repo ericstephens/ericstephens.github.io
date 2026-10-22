@@ -1,450 +1,506 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>instructorBio.md</title>
-<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
-
-<style>
-/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
-/*---------------------------------------------------------------------------------------------
- *  Copyright (c) Microsoft Corporation. All rights reserved.
- *  Licensed under the MIT License. See License.txt in the project root for license information.
- *--------------------------------------------------------------------------------------------*/
-
-body {
-	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
-	font-size: var(--vscode-markdown-font-size, 14px);
-	padding: 0 26px;
-	line-height: var(--vscode-markdown-line-height, 22px);
-	word-wrap: break-word;
-}
-
-#code-csp-warning {
-	position: fixed;
-	top: 0;
-	right: 0;
-	color: white;
-	margin: 16px;
-	text-align: center;
-	font-size: 12px;
-	font-family: sans-serif;
-	background-color:#444444;
-	cursor: pointer;
-	padding: 6px;
-	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
-}
-
-#code-csp-warning:hover {
-	text-decoration: none;
-	background-color:#007acc;
-	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
-}
-
-body.scrollBeyondLastLine {
-	margin-bottom: calc(100vh - 22px);
-}
-
-body.showEditorSelection .code-line {
-	position: relative;
-}
-
-body.showEditorSelection .code-active-line:before,
-body.showEditorSelection .code-line:hover:before {
-	content: "";
-	display: block;
-	position: absolute;
-	top: 0;
-	left: -12px;
-	height: 100%;
-}
-
-body.showEditorSelection li.code-active-line:before,
-body.showEditorSelection li.code-line:hover:before {
-	left: -30px;
-}
-
-.vscode-light.showEditorSelection .code-active-line:before {
-	border-left: 3px solid rgba(0, 0, 0, 0.15);
-}
-
-.vscode-light.showEditorSelection .code-line:hover:before {
-	border-left: 3px solid rgba(0, 0, 0, 0.40);
-}
-
-.vscode-light.showEditorSelection .code-line .code-line:hover:before {
-	border-left: none;
-}
-
-.vscode-dark.showEditorSelection .code-active-line:before {
-	border-left: 3px solid rgba(255, 255, 255, 0.4);
-}
-
-.vscode-dark.showEditorSelection .code-line:hover:before {
-	border-left: 3px solid rgba(255, 255, 255, 0.60);
-}
-
-.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
-	border-left: none;
-}
-
-.vscode-high-contrast.showEditorSelection .code-active-line:before {
-	border-left: 3px solid rgba(255, 160, 0, 0.7);
-}
-
-.vscode-high-contrast.showEditorSelection .code-line:hover:before {
-	border-left: 3px solid rgba(255, 160, 0, 1);
-}
-
-.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
-	border-left: none;
-}
-
-img {
-	max-width: 100%;
-	max-height: 100%;
-}
-
-a {
-	text-decoration: none;
-}
-
-a:hover {
-	text-decoration: underline;
-}
-
-a:focus,
-input:focus,
-select:focus,
-textarea:focus {
-	outline: 1px solid -webkit-focus-ring-color;
-	outline-offset: -1px;
-}
-
-hr {
-	border: 0;
-	height: 2px;
-	border-bottom: 2px solid;
-}
-
-h1 {
-	padding-bottom: 0.3em;
-	line-height: 1.2;
-	border-bottom-width: 1px;
-	border-bottom-style: solid;
-}
-
-h1, h2, h3 {
-	font-weight: normal;
-}
-
-table {
-	border-collapse: collapse;
-}
-
-table > thead > tr > th {
-	text-align: left;
-	border-bottom: 1px solid;
-}
-
-table > thead > tr > th,
-table > thead > tr > td,
-table > tbody > tr > th,
-table > tbody > tr > td {
-	padding: 5px 10px;
-}
-
-table > tbody > tr + tr > td {
-	border-top: 1px solid;
-}
-
-blockquote {
-	margin: 0 7px 0 5px;
-	padding: 0 16px 0 10px;
-	border-left-width: 5px;
-	border-left-style: solid;
-}
-
-code {
-	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
-	font-size: 1em;
-	line-height: 1.357em;
-}
-
-body.wordWrap pre {
-	white-space: pre-wrap;
-}
-
-pre:not(.hljs),
-pre.hljs code > div {
-	padding: 16px;
-	border-radius: 3px;
-	overflow: auto;
-}
-
-pre code {
-	color: var(--vscode-editor-foreground);
-	tab-size: 4;
-}
-
-/** Theming */
-
-.vscode-light pre {
-	background-color: rgba(220, 220, 220, 0.4);
-}
-
-.vscode-dark pre {
-	background-color: rgba(10, 10, 10, 0.4);
-}
-
-.vscode-high-contrast pre {
-	background-color: rgb(0, 0, 0);
-}
-
-.vscode-high-contrast h1 {
-	border-color: rgb(0, 0, 0);
-}
-
-.vscode-light table > thead > tr > th {
-	border-color: rgba(0, 0, 0, 0.69);
-}
-
-.vscode-dark table > thead > tr > th {
-	border-color: rgba(255, 255, 255, 0.69);
-}
-
-.vscode-light h1,
-.vscode-light hr,
-.vscode-light table > tbody > tr + tr > td {
-	border-color: rgba(0, 0, 0, 0.18);
-}
-
-.vscode-dark h1,
-.vscode-dark hr,
-.vscode-dark table > tbody > tr + tr > td {
-	border-color: rgba(255, 255, 255, 0.18);
-}
-
-</style>
-
-<style>
-/* Tomorrow Theme */
-/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
-/* Original theme - https://github.com/chriskempson/tomorrow-theme */
-
-/* Tomorrow Comment */
-.hljs-comment,
-.hljs-quote {
-	color: #8e908c;
-}
-
-/* Tomorrow Red */
-.hljs-variable,
-.hljs-template-variable,
-.hljs-tag,
-.hljs-name,
-.hljs-selector-id,
-.hljs-selector-class,
-.hljs-regexp,
-.hljs-deletion {
-	color: #c82829;
-}
-
-/* Tomorrow Orange */
-.hljs-number,
-.hljs-built_in,
-.hljs-builtin-name,
-.hljs-literal,
-.hljs-type,
-.hljs-params,
-.hljs-meta,
-.hljs-link {
-	color: #f5871f;
-}
-
-/* Tomorrow Yellow */
-.hljs-attribute {
-	color: #eab700;
-}
-
-/* Tomorrow Green */
-.hljs-string,
-.hljs-symbol,
-.hljs-bullet,
-.hljs-addition {
-	color: #718c00;
-}
-
-/* Tomorrow Blue */
-.hljs-title,
-.hljs-section {
-	color: #4271ae;
-}
-
-/* Tomorrow Purple */
-.hljs-keyword,
-.hljs-selector-tag {
-	color: #8959a8;
-}
-
-.hljs {
-	display: block;
-	overflow-x: auto;
-	color: #4d4d4c;
-	padding: 0.5em;
-}
-
-.hljs-emphasis {
-	font-style: italic;
-}
-
-.hljs-strong {
-	font-weight: bold;
-}
-</style>
-
-<style>
-/*
- * Markdown PDF CSS
- */
-
- body {
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
-	padding: 0 12px;
-}
-
-pre {
-	background-color: #f8f8f8;
-	border: 1px solid #cccccc;
-	border-radius: 3px;
-	overflow-x: auto;
-	white-space: pre-wrap;
-	overflow-wrap: break-word;
-}
-
-pre:not(.hljs) {
-	padding: 23px;
-	line-height: 19px;
-}
-
-blockquote {
-	background: rgba(127, 127, 127, 0.1);
-	border-color: rgba(0, 122, 204, 0.5);
-}
-
-.emoji {
-	height: 1.4em;
-}
-
-code {
-	font-size: 14px;
-	line-height: 19px;
-}
-
-/* for inline code */
-:not(pre):not(.hljs) > code {
-	color: #C9AE75; /* Change the old color so it seems less like an error */
-	font-size: inherit;
-}
-
-/* Page Break : use <div class="page"/> or <div class="page"></div> to insert page break
--------------------------------------------------------- */
-.page {
-	page-break-after: always;
-}
-
-</style>
-
-<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eric Stephens – Certified Pistol Instructor & Range Officer</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy:        #1a2535;
+      --steel:       #2e4057;
+      --gold:        #c8963e;
+      --light:       #f5f5f0;
+      --white:       #ffffff;
+      --text:        #2d2d2d;
+      --muted:       #6b7280;
+      --border:      #ddd8ce;
+      --photo-width: 200px; /* ← adjust to resize the photo */
+    }
+
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      background: var(--light);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    /* ── Header / Hero ── */
+    header {
+      background: linear-gradient(135deg, var(--navy) 0%, var(--steel) 100%);
+      color: var(--white);
+      padding: 3rem 2rem;
+    }
+
+    .hero {
+      max-width: 860px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: var(--photo-width, 200px) 1fr;
+      gap: 2.5rem;
+      align-items: start;
+    }
+
+    /* Photo – adjust --photo-width in :root to resize */
+    .photo-wrap {
+      width: var(--photo-width, 200px);
+    }
+
+    .photo-wrap img {
+      width: 100%;
+      height: auto;
+      border: 4px solid var(--gold);
+      display: block;
+    }
+
+    .photo-placeholder {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.1);
+      border: 4px solid var(--gold);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-family: sans-serif;
+      font-size: 0.75rem;
+      color: rgba(255,255,255,0.5);
+      text-align: center;
+      gap: 0.4rem;
+      cursor: pointer;
+    }
+
+    .photo-placeholder svg {
+      width: 40px;
+      height: 40px;
+      opacity: 0.5;
+    }
+
+    .hero-text h1 {
+      font-size: 2rem;
+      font-weight: bold;
+      letter-spacing: 0.02em;
+      line-height: 1.2;
+    }
+
+    .hero-text h1 span {
+      color: var(--gold);
+    }
+
+    .hero-text .org {
+      margin-top: 0.4rem;
+      font-size: 1rem;
+      color: rgba(255,255,255,0.75);
+      font-style: italic;
+    }
+
+    .hero-text .contact {
+      margin-top: 0.5rem;
+      font-family: sans-serif;
+      font-size: 0.88rem;
+      color: rgba(255,255,255,0.7);
+    }
+
+    .hero-text .contact a {
+      color: var(--gold);
+      text-decoration: none;
+    }
+
+    .hero-text .contact a:hover {
+      text-decoration: underline;
+    }
+
+    .hero-bio {
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.8);
+      line-height: 1.6;
+    }
+
+    .hero-bio p + p {
+      margin-top: 0.6rem;
+    }
+
+    .contact-sep {
+      margin: 0 0.4rem;
+      opacity: 0.5;
+    }
+
+    .hero-text .tagline {
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.6);
+      font-family: sans-serif;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    /* ── Main layout ── */
+    main {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 2.5rem 2rem 4rem;
+    }
+
+    /* ── Section titles ── */
+    .section {
+      margin-top: 2.5rem;
+    }
+
+    .section-title {
+      font-size: 1.1rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--navy);
+      border-bottom: 2px solid var(--gold);
+      padding-bottom: 0.4rem;
+      margin-bottom: 1.25rem;
+    }
+
+    /* ── Bio paragraph ── */
+    .bio p {
+      margin-bottom: 1rem;
+      font-size: 1rem;
+    }
+
+    /* ── Philosophy cards ── */
+    .philosophy-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+      gap: 1rem;
+    }
+
+    .phil-card {
+      background: var(--white);
+      border-left: 4px solid var(--gold);
+      border-radius: 4px;
+      padding: 0.9rem 1rem;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+    }
+
+    .phil-card .phil-name {
+      font-weight: bold;
+      color: var(--navy);
+      display: block;
+      margin-bottom: 0.2rem;
+    }
+
+    .phil-card .phil-desc {
+      font-size: 0.88rem;
+      color: var(--muted);
+      font-family: sans-serif;
+    }
+
+    /* ── Influences table ── */
+    .influences-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: sans-serif;
+      font-size: 0.92rem;
+    }
+
+    .influences-table thead th {
+      background: var(--navy);
+      color: var(--white);
+      text-align: left;
+      padding: 0.65rem 1rem;
+      letter-spacing: 0.05em;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+    }
+
+    .influences-table tbody tr:nth-child(odd) {
+      background: var(--white);
+    }
+
+    .influences-table tbody tr:nth-child(even) {
+      background: #eeeee8;
+    }
+
+    .influences-table tbody td {
+      padding: 0.6rem 1rem;
+      vertical-align: top;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .influences-table tbody td:first-child {
+      font-weight: bold;
+      color: var(--navy);
+      white-space: nowrap;
+    }
+
+    /* ── Teaching experience pills ── */
+    .course-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+    }
+
+    .course-pill {
+      background: var(--navy);
+      color: var(--white);
+      font-family: sans-serif;
+      font-size: 0.82rem;
+      padding: 0.4rem 0.85rem;
+      border-radius: 20px;
+      letter-spacing: 0.02em;
+    }
+
+    /* ── Training timeline ── */
+    .training-list {
+      list-style: none;
+    }
+
+    .training-list li {
+      display: flex;
+      gap: 1rem;
+      padding: 0.45rem 0;
+      border-bottom: 1px solid var(--border);
+      font-family: sans-serif;
+      font-size: 0.9rem;
+      align-items: baseline;
+    }
+
+    .training-list li:last-child {
+      border-bottom: none;
+    }
+
+    .training-year {
+      flex-shrink: 0;
+      width: 3rem;
+      font-weight: bold;
+      color: var(--gold);
+      font-size: 0.85rem;
+    }
+
+    .training-detail {
+      color: var(--text);
+    }
+
+    /* ── Community ── */
+    .community-list {
+      list-style: none;
+    }
+
+    .community-list li {
+      padding: 0.45rem 0;
+      border-bottom: 1px solid var(--border);
+      font-family: sans-serif;
+      font-size: 0.9rem;
+      padding-left: 1.2rem;
+      position: relative;
+    }
+
+    .community-list li::before {
+      content: "▸";
+      position: absolute;
+      left: 0;
+      color: var(--gold);
+    }
+
+    .community-list li:last-child {
+      border-bottom: none;
+    }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      font-family: sans-serif;
+      font-size: 0.8rem;
+      color: var(--muted);
+      padding: 1.5rem 1rem;
+      border-top: 1px solid var(--border);
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 560px) {
+      .hero { grid-template-columns: 1fr; justify-items: center; text-align: center; }
+      .hero-text h1 { font-size: 1.5rem; }
+    }
+  </style>
 </head>
 <body>
-  <script>
-    mermaid.initialize({
-      startOnLoad: true,
-      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
-          ? 'dark'
-          : 'default'
-    });
-  </script>
-<h1 id="eric-stephens---certified-pistol-instructor--range-officer">Eric Stephens - Certified Pistol Instructor &amp; Range Officer</h1>
-<h2 id="rochester-personal-defense--lionspride-training-group">Rochester Personal Defense / LionsPride Training Group</h2>
-<p>I participated in NRA 3-position rifle matches in high school which was long before the Internet. During 2020, I had a bit more time to reflect on getting back into the sport and expanding into pistol craft. As part of my duties at Baldwinsville Rod &amp; Gun Club, I took RPD’s range officer training and was immediately convinced this is where I would conduct my pistol training. What began as learning the basics of using the “tool” evolved into a mindset of more personal responsibility for my own safety and that of my family. Being accepted into and completing the Handgun Master Program in 2022 was a force multiplier for my learning experience and led me to the opportunity to be an instructor.</p>
-<p>I learned as an IT instructor the best way to continually learn a subject is to teach it. I look forward to working with clients with their marksmanship skills.</p>
-<h1 id="philosophy">Philosophy</h1>
-<ul>
-<li>Kaizen - always improving, always learning</li>
-<li>Tsundoku - too many books, not enough time There are no advanced skills, only fundamentals mastered (Bruce Lee, paraphrased)</li>
-<li>Prioritize and Execute (Jocko Wilink)</li>
-<li>Keep it Simple (Jenkins, Spaulding)</li>
-</ul>
-<h1 id="key-influences">Key Influences</h1>
-<ul>
-<li>Dave Jenkins (Rochester Personal Defense)</li>
-<li>Matt Underwood (Rochester Personal Defense)</li>
-<li>Brian Hill (The Complete Combatant)</li>
-<li>Dave Spaulding (Handgun Combatives)</li>
-<li>Dean Hendricks (USCCA)</li>
-<li>Ed Murdoch (Sig Sauer Academy)</li>
-<li>Klint Macro (USCCA)</li>
-<li>Rich Brown (USCCA)</li>
-<li>Rich Nance (Nance Training &amp; Consulting)</li>
-<li>Russ Lyons (Modern Samurai Project)</li>
-<li>Tim Herron (Tim Herron Shooting)</li>
-<li>Tom Givens (Rangemaster)</li>
-</ul>
-<h1 id="teaching-experience">Teaching Experience</h1>
-<ul>
-<li>NRA Basics of Pistol Shooting</li>
-<li>NY State Concealed Carry 18HR</li>
-<li>Introduction to Handgun</li>
-<li>USCCA Handgun Basics</li>
-<li>Concealed Carry Pistol</li>
-<li>Concealed Carry Skills</li>
-<li>Custom Defensive Pistol</li>
-</ul>
-<h1 id="training-experience">Training Experience</h1>
-<ul>
-<li>2026 - Sig Sauer Academy - Steel Frenzy</li>
-<li>2026 - Sig Sauer Academy - Reflexive Shooting II</li>
-<li>2026 - The Complete Combatant - Inner Game of Shooting</li>
-<li>2026 - USCCA - Range Safety Officer Course</li>
-<li>2026 - USCCA Firearms Instructor Development Course FIDC-001</li>
-<li>2026 - Rochester Personal Defense - Run Your Gun</li>
-<li>2026 - Rochester Personal Defense - Handgun Combatives</li>
-<li>2026 - Commonwealth of Massachusetts - Basic Firearms Safety</li>
-<li>2026 - Rich Nance - Close Quarters Pistol</li>
-<li>2026 - American Red Cross - Basic Life Support and First Aid for Severe Bleeding</li>
-<li>2025 - Tim Herron - Instructor Diagnostics and Development Course</li>
-<li>2025 - Sig Sauer Academy - Pistol Mounted Optics Instructor</li>
-<li>2025 - Rochester Personal Defense - Shotgun Master Program</li>
-<li>2024 - Sig Sauer Academy - Low Light Operator</li>
-<li>2024 - Rochester Personal Defense - Handgun Combatives</li>
-<li>2024 - Rangemaster - Instructor Development</li>
-<li>2023 - Rochester Personal Defense - UT / FL Multi-state Permit Course</li>
-<li>2023 - USCCA Certified Firearms Instructor - Conceal Carry &amp; Home Defense</li>
-<li>2023 - Sig Sauer Academy - Reflexive Shooting</li>
-<li>2023 - Rochester Personal Defense - Handgun Master Alumni sessions</li>
-<li>2023 - Rochester Personal Defense - Force on Force</li>
-<li>2023 - Rochester Personal Defense - Dave Spaulding’s Great F—-ing Shooting Course</li>
-<li>2023 - Modern Samurai Project - Red Dot Pistol Fundamentals and Performance</li>
-<li>2023 - Ed Monk - Active Shooter Response</li>
-<li>2022 - USPSA National Range Officer Institute - Training and Certification</li>
-<li>2022 - Rochester Personal Defense - Handgun Master Program</li>
-<li>2022 - Rochester Personal Defense - NRA Pistol Instructor Certification</li>
-<li>2022 - Rochester Personal Defense - Article 35 Use of Force Instructor’s seminar</li>
-<li>2021 - Rochester Personal Defense - USCCA Handgun Basics</li>
-<li>2021 - Rochester Personal Defense - USCCA Concealed Carry 1</li>
-<li>2021 - Rochester Personal Defense - NRA Range Safety Officer Certification</li>
-<li>2021 - Rochester Personal Defense - Civilian Response to Trauma</li>
-<li>2010 - Coker's Karate School - Purple Belt 1st Shichi-kyu, Okinawan Goju-Ryu Karate-Do</li>
-</ul>
-<h1 id="community-involvement">Community Involvement</h1>
-<ul>
-<li>Baldwinsville Rod &amp; Gun Club – Range Safety Officer, Board Member (thru Dec 2023)</li>
-<li>Amateur Radio Emergency Service (ARES) – Onondaga County (past)</li>
-<li>Radio Amateurs of Greater Syracuse (RAGS) / Liverpool Amateur Repeater Club (LARC)</li>
-<li>Boy Scout Troop 80 – Scoutmaster / Committee Chair roles (past)</li>
-<li>Calvary Syracuse – Board member / Church school instructor (past)</li>
-</ul>
+
+<header>
+  <div class="hero">
+    <div class="photo-wrap">
+      <img src="eric.jpeg" alt="Eric Stephens">
+    </div>
+    <div class="hero-text">
+      <h1>Eric Stephens<br><span>Certified Pistol Instructor &amp; Range Officer</span></h1>
+      <p class="org">Rochester Personal Defense / LionsPride Training Group</p>
+      <p class="contact">
+        <a href="mailto:eric@andersmathiesen.com">eric@andersmathiesen.com</a>
+        <span class="contact-sep">&middot;</span>
+        <a href="tel:+1 315.406.4100">+1 315.406.4100</a>
+        <span class="contact-sep">&middot;</span>
+        <a href="https://x.com/easyeactual">@easyeactual</a>
+        <span class="contact-sep">&middot;</span>
+        <span>Syracuse, NY</span>
+      </p>
+      <p class="tagline">Kaizen &middot; Prioritize &amp; Execute &middot; Keep It Simple</p>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- Bio -->
+  <section class="section bio">
+    <h2 class="section-title">About</h2>
+    <p>I participated in NRA 3-position rifle matches in high school — long before the Internet. During 2020, I had time to reflect on getting back into the sport and expanding into pistol craft. As part of my duties at Baldwinsville Rod &amp; Gun Club, I took RPD's range officer training and was immediately convinced this is where I would conduct my pistol training. What began as learning the basics of using the "tool" evolved into a mindset of more personal responsibility for my own safety and that of my family. Being accepted into and completing the Handgun Master Program in 2022 was a force multiplier for my learning experience and led me to the opportunity to be an instructor.</p>
+    <p>I learned as an IT instructor that the best way to continually learn a subject is to teach it. I look forward to working with clients on their marksmanship skills.</p>
+  </section>
+
+  <!-- Philosophy -->
+  <section class="section">
+    <h2 class="section-title">Philosophy</h2>
+    <div class="philosophy-grid">
+      <div class="phil-card">
+        <span class="phil-name">Kaizen</span>
+        <span class="phil-desc">Always improving, always learning</span>
+      </div>
+      <div class="phil-card">
+        <span class="phil-name">Tsundoku</span>
+        <span class="phil-desc">Too many books, not enough time</span>
+      </div>
+      <div class="phil-card">
+        <span class="phil-name">Fundamentals First</span>
+        <span class="phil-desc">"There are no advanced skills, only fundamentals mastered" — Bruce Lee (paraphrased)</span>
+      </div>
+      <div class="phil-card">
+        <span class="phil-name">Prioritize &amp; Execute</span>
+        <span class="phil-desc">Jocko Willink</span>
+      </div>
+      <div class="phil-card">
+        <span class="phil-name">Keep It Simple</span>
+        <span class="phil-desc">Jenkins, Spaulding</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Influences -->
+  <section class="section">
+    <h2 class="section-title">Key Influences</h2>
+    <table class="influences-table">
+      <thead>
+        <tr>
+          <th>Institution</th>
+          <th>Instructors</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Rochester Personal Defense</td>
+          <td>Dave Jenkins, Matt Underwood</td>
+        </tr>
+        <tr>
+          <td>Modern Samurai Project</td>
+          <td>Russ Lyons</td>
+        </tr>
+        <tr>
+          <td>Nance Training &amp; Consulting</td>
+          <td>Rich Nance</td>
+        </tr>
+        <tr>
+          <td>Rangemaster</td>
+          <td>Tom Givens</td>
+        </tr>
+        <tr>
+          <td>Sig Sauer Academy</td>
+          <td>Ed Murdoch</td>
+        </tr>
+        <tr>
+          <td>The Complete Combatant</td>
+          <td>Brian Hill</td>
+        </tr>
+        <tr>
+          <td>Tim Herron Shooting</td>
+          <td>Tim Herron</td>
+        </tr>
+        <tr>
+          <td>USCCA</td>
+          <td>Dean Hendricks, Rich Brown, Klint Macro, Justin Peters</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Teaching Experience -->
+  <section class="section">
+    <h2 class="section-title">Teaching Experience</h2>
+    <div class="course-list">
+      <span class="course-pill">NRA Basics of Pistol Shooting</span>
+      <span class="course-pill">NY State Concealed Carry 18HR</span>
+      <span class="course-pill">Introduction to Handgun</span>
+      <span class="course-pill">USCCA Handgun Basics</span>
+      <span class="course-pill">Concealed Carry Pistol</span>
+      <span class="course-pill">Concealed Carry Skills</span>
+      <span class="course-pill">Custom Defensive Pistol</span>
+    </div>
+  </section>
+
+  <!-- Training Experience -->
+  <section class="section">
+    <h2 class="section-title">Training Experience</h2>
+    <ul class="training-list">
+      <li><span class="training-year">2026</span><span class="training-detail">Sig Sauer Academy – Steel Frenzy</span></li>
+      <li><span class="training-year">2026</span><span class="training-detail">Sig Sauer Academy – Reflexive Shooting II</span></li>
+      <li><span class="training-year">2026</span><span class="training-detail">The Complete Combatant – Inner Game of Shooting</span></li>
+      <li><span class="training-year">2026</span><span class="training-detail">USCCA – Range Safety Officer Course</span></li>
+      <li><span class="training-year">2026</span><span class="training-detail">USCCA – Firearms Instructor Development Course FIDC-001</span></li>
+      <li><span class="training-year">2026</span><span class="training-detail">Rochester Personal Defense – Run Your Gun</span></li>
+      <li><span class="training-year">2026</span><span class="training-detail">Rochester Personal Defense – Handgun Combatives</span></li>
+      <li><span class="training-year">2026</span><span class="training-detail">Commonwealth of Massachusetts – Basic Firearms Safety</span></li>
+      <li><span class="training-year">2026</span><span class="training-detail">Rich Nance – Close Quarters Pistol</span></li>
+      <li><span class="training-year">2026</span><span class="training-detail">American Red Cross – Basic Life Support and First Aid for Severe Bleeding</span></li>
+      <li><span class="training-year">2025</span><span class="training-detail">Tim Herron – Instructor Diagnostics and Development Course</span></li>
+      <li><span class="training-year">2025</span><span class="training-detail">Sig Sauer Academy – Pistol Mounted Optics Instructor</span></li>
+      <li><span class="training-year">2025</span><span class="training-detail">Rochester Personal Defense – Shotgun Master Program</span></li>
+      <li><span class="training-year">2024</span><span class="training-detail">Sig Sauer Academy – Low Light Operator</span></li>
+      <li><span class="training-year">2024</span><span class="training-detail">Rochester Personal Defense – Handgun Combatives</span></li>
+      <li><span class="training-year">2024</span><span class="training-detail">Rangemaster – Instructor Development</span></li>
+      <li><span class="training-year">2023</span><span class="training-detail">Rochester Personal Defense – UT / FL Multi-state Permit Course</span></li>
+      <li><span class="training-year">2023</span><span class="training-detail">USCCA – Certified Firearms Instructor, Concealed Carry &amp; Home Defense</span></li>
+      <li><span class="training-year">2023</span><span class="training-detail">Sig Sauer Academy – Reflexive Shooting</span></li>
+      <li><span class="training-year">2023</span><span class="training-detail">Rochester Personal Defense – Handgun Master Alumni Sessions</span></li>
+      <li><span class="training-year">2023</span><span class="training-detail">Rochester Personal Defense – Force on Force</span></li>
+      <li><span class="training-year">2023</span><span class="training-detail">Rochester Personal Defense – Dave Spaulding's Great F—ing Shooting Course</span></li>
+      <li><span class="training-year">2023</span><span class="training-detail">Modern Samurai Project – Red Dot Pistol Fundamentals and Performance</span></li>
+      <li><span class="training-year">2023</span><span class="training-detail">Ed Monk – Active Shooter Response</span></li>
+      <li><span class="training-year">2022</span><span class="training-detail">USPSA National Range Officer Institute – Training and Certification</span></li>
+      <li><span class="training-year">2022</span><span class="training-detail">Rochester Personal Defense – Handgun Master Program</span></li>
+      <li><span class="training-year">2022</span><span class="training-detail">Rochester Personal Defense – NRA Pistol Instructor Certification</span></li>
+      <li><span class="training-year">2022</span><span class="training-detail">Rochester Personal Defense – Article 35 Use of Force Instructor's Seminar</span></li>
+      <li><span class="training-year">2021</span><span class="training-detail">Rochester Personal Defense – USCCA Handgun Basics</span></li>
+      <li><span class="training-year">2021</span><span class="training-detail">Rochester Personal Defense – USCCA Concealed Carry 1</span></li>
+      <li><span class="training-year">2021</span><span class="training-detail">Rochester Personal Defense – NRA Range Safety Officer Certification</span></li>
+      <li><span class="training-year">2021</span><span class="training-detail">Rochester Personal Defense – Civilian Response to Trauma</span></li>
+      <li><span class="training-year">2010</span><span class="training-detail">Coker's Karate School – Purple Belt 1st Shichi-kyu, Okinawan Goju-Ryu Karate-Do</span></li>
+    </ul>
+  </section>
+
+  <!-- Community Involvement -->
+  <section class="section">
+    <h2 class="section-title">Community Involvement</h2>
+    <ul class="community-list">
+      <li>Baldwinsville Rod &amp; Gun Club – Range Safety Officer, Board Member (through Dec 2023)</li>
+      <li>Amateur Radio Emergency Service (ARES) – Onondaga County (past)</li>
+      <li>Radio Amateurs of Greater Syracuse (RAGS) / Liverpool Amateur Repeater Club (LARC)</li>
+      <li>Boy Scout Troop 80 – Scoutmaster / Committee Chair roles (past)</li>
+      <li>Calvary Syracuse – Board Member / Church School Instructor (past)</li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  &copy; Eric Stephens &mdash; Rochester Personal Defense / LionsPride Training Group
+</footer>
 
 </body>
 </html>

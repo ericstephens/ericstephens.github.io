@@ -12,18 +12,17 @@ I learned as an IT instructor the best way to continually learn a subject is to 
 - Keep it Simple (Jenkins, Spaulding)
 
 # Key Influences
-- Dave Jenkins (Rochester Personal Defense)
-- Matt Underwood (Rochester Personal Defense)
-- Brian Hill (The Complete Combatant)
-- Dave Spaulding (Handgun Combatives)
-- Dean Hendricks (USCCA)
-- Ed Murdoch (Sig Sauer Academy)
-- Klint Macro (USCCA)
-- Rich Brown (USCCA)
-- Rich Nance (Nance Training & Consulting)
-- Russ Lyons (Modern Samurai Project)
-- Tim Herron (Tim Herron Shooting)
-- Tom Givens (Rangemaster)
+
+| Institution                 | Instructors                                                     |
+| --------------------------- | --------------------------------------------------------------- |
+| Rochester Personal Defense  | Dave Jenkins<br/>Matt Underwood                                 |
+| Modern Samurai Project      | Russ Lyons                                                      |
+| Nance Training & Consulting | Rich Nance                                                      |
+| Rangemaster                 | Tom Givens                                                      |
+| Sig Sauer Academy           | Ed Murdoch                                                      |
+| The Complete Combatant      | Brian Hill                                                      |
+| Tim Herron Shooting         | Tim Herron                                                      |
+| USCCA                       | Dean Hendricks<br/>Rich Brown<br/>Klint Macro<br/>Justin Peters |
 
 # Teaching Experience
 - NRA Basics of Pistol Shooting
