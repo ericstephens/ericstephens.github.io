@@ -34,6 +34,7 @@ I learned as an IT instructor the best way to continually learn a subject is to 
 - Custom Defensive Pistol
 
 # Training Experience
+- 2026 - The Complete Combatant - Reactionary Zones
 - 2026 - Sig Sauer Academy - Steel Frenzy
 - 2026 - Sig Sauer Academy - Reflexive Shooting II
 - 2026 - The Complete Combatant - Inner Game of Shooting
